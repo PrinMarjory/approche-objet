@@ -1,30 +1,18 @@
 package entites;
 
-import entites2.Personne;
-
 public class TestPersonne {
 
 	public static void main(String[] args) {
 		
-		//Instanciation adresse
-		AdressePostale adr = new AdressePostale();
-		adr.numeroRue = 29;
-		adr.libelleRue = "rue des Lilas";
-		adr.codePostal = 44000;
-		adr.ville = "Nantes";
+		AdressePostale adr1 = new AdressePostale(29, "rue des Lilas", 44000, "Nantes");
+		AdressePostale adr2 = new AdressePostale(12, "rue des Violettes", 35000, "Rennes");
+		Personne pers1 = new Personne("Prin", "Marjory", adr1);
+		Personne pers2 = new Personne("Dupont", "François", adr1);
+		Personne pers3 = new Personne("Leblanc", "Sophie");
 		
-		//Instanciation personne 1
-		Personne pers1 = new Personne();
-		pers1.nom = "PRIN";
-		pers1.prenom = "Marjory";
-		pers1.adresse = adr;
-		
-		//Instanciation personne 1
-		Personne pers2 = new Personne();
-		pers2.nom = "DUPONT";
-		pers2.prenom = "François";
-		pers2.adresse = adr;
-
+		pers1.afficher();
+		pers3.modifierAdresse(adr2);
+		pers3.afficherAdresse();
 	}
 
 }
