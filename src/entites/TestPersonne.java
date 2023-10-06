@@ -10,9 +10,11 @@ public class TestPersonne {
 		Personne pers2 = new Personne("Dupont", "François", adr1);
 		Personne pers3 = new Personne("Leblanc", "Sophie");
 		
-		pers1.afficher();
-		pers3.modifierAdresse(adr2);
-		pers3.afficherAdresse();
+		pers1.print();
+		pers2.print();
+		pers3.setAdresse(adr2);
+		AdressePostale adr3 = pers3.getAdresse();
+		adr3.print();
 	}
 
 }

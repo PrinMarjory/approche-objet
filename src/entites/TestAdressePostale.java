@@ -12,7 +12,8 @@ public class TestAdressePostale {
 		
 		// Test
 		
-		adr1.afficherAdresse();
+		adr1.print();
+		adr2.print();
 	}
 
 }

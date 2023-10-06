@@ -1,46 +1,87 @@
 package entites;
 
+
+/** 
+ * Représente une personne 
+ * @author Marjory PRIN
+ */
 public class Personne {
 	String nom;
 	String prenom;
 	AdressePostale adresse;
 	
+	/**
+	 * Constructeur
+	 * @param nom
+	 * @param prenom
+	 */
 	public Personne(String nom, String prenom) {
 		this.nom = nom;
 		this.prenom = prenom;
 	}
 	
+	/**
+	 * Constructeur
+	 * @param nom
+	 * @param prenom
+	 * @param adresse
+	 */
 	public Personne(String nom, String prenom, AdressePostale adresse) {
 		this.nom = nom;
 		this.prenom = prenom;
 		this.adresse = adresse;
 	}
 	
-	public void afficher() {
+	/** Affichage du nom en majuscule et prénom */
+	public void print() {
 		System.out.println(this.nom.toUpperCase() + " " + this.prenom);
 	}
 	
-	public void modifierNom(String nom) {
+	/**
+	 * Setter pour le nom
+	 * @param nom : nom de la personne
+	 */
+	public void setNom(String nom) {
 		this.nom = nom;
 	}
 	
-	public void modifierPrenom(String prenom) {
+	/**
+	 * Setter pour le prénom
+	 * @param prenom : prénom de la personne
+	 */
+	public void setPrenom(String prenom) {
 		this.prenom = prenom;
 	}
 	
-	public void modifierAdresse(AdressePostale adresse) {
+	/**
+	 * Setter pour l'adresse
+	 * @param adresse
+	 */
+	public void setAdresse(AdressePostale adresse) {
 		this.adresse = adresse;
 	}
 	
-	public void afficherNom() {
-		System.out.println("Nom :" + this.nom);
+	/**
+	 * Getter pour le nom
+	 * @return le nom de la personne
+	 */
+	public String getNom() {
+		return this.nom;
 	}
 	
-	public void afficherPrenom() {
-		System.out.println("Prénom :" + this.prenom);
+	/**
+	 * Getter pour le prénom
+	 * @return le prénom de la personne
+	 */
+	public String getPrenom() {
+		return this.prenom;
 	}
 	
-	public void afficherAdresse() {
-		this.adresse.afficherAdresse();
+	/**
+	 * Getter pour l'adresse
+	 * @return l'adresse de la personne
+	 */
+	public AdressePostale getAdresse() {
+		return this.adresse;
 	}
 }
