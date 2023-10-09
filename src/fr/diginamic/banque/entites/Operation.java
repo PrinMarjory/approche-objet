@@ -15,7 +15,12 @@ public abstract class Operation {
 		this.date = date;
 		this.montant = montant;
 	}
-
+	
+	@Override
+	public String toString() {
+		return "Date: " + date + " Montant : " + montant + "€ " + getType();
+	}
+	
 	/**
 	 * @return la date de l'opération
 	 */

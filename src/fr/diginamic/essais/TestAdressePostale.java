@@ -12,7 +12,6 @@ public class TestAdressePostale {
 		AdressePostale adr2 = new AdressePostale(12, "rue des Violettes", 35000, "Rennes");
 		
 		// Test
-		
 		adr1.print();
 		adr2.print();
 	}

@@ -15,8 +15,7 @@ public class TestOperation {
 		System.out.println("Solde initial du compte " + monCompte.getNumeroCompte() + " : " + monCompte.getSoldeCompte() + "€\n");
 		
 		for (int i = 0; i < operations.length; i++) {
-			System.out.println("Date: " + operations[i].getDate() + " Montant : " + operations[i].getMontant() 
-					+ "€ " + operations[i].getType());
+			System.out.println(operations[i]);
 			operations[i].addOperation(monCompte);
 			System.out.println("Nouveau solde : " + monCompte.getSoldeCompte() + "€\n");
 		}
