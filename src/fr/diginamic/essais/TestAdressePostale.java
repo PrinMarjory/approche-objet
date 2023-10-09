@@ -1,4 +1,5 @@
-package entites;
+package fr.diginamic.essais;
+import fr.diginamic.entites.AdressePostale;
 
 public class TestAdressePostale {
 

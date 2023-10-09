@@ -1,4 +1,4 @@
-package entites;
+package fr.diginamic.entites;
 
 /**
  * Représente une adresse postale
@@ -17,7 +17,7 @@ public class AdressePostale {
 	 * @param codePostal : le code postale
 	 * @param ville : la ville
 	 */
-	AdressePostale(int numeroRue, String libelleRue, int codePostal, String ville) {
+	public AdressePostale(int numeroRue, String libelleRue, int codePostal, String ville) {
 		this.numeroRue = numeroRue;
 		this.libelleRue = libelleRue;
 		this.codePostal = codePostal;

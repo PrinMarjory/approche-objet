@@ -1,5 +1,4 @@
-package entites;
-
+package fr.diginamic.entites;
 
 /** 
  * Représente une personne 

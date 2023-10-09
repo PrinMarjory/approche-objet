@@ -1,4 +1,6 @@
-package entites;
+package fr.diginamic.essais;
+import fr.diginamic.entites.AdressePostale;
+import fr.diginamic.entites.Personne;
 
 public class TestPersonne {
 
