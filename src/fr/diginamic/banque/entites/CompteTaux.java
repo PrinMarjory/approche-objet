@@ -19,13 +19,6 @@ public class CompteTaux extends Compte {
 	public String toString() {
 		return super.toString() + ", Taux de rémunération : " + tauxRemuneration;
 	}
-
-	/**
-	 * @return le taux de rémuéeration
-	 */
-	public double getTauxRemuneration() {
-		return tauxRemuneration;
-	}
 	
 	
 }

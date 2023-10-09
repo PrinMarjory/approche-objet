@@ -37,8 +37,13 @@ public class Compte {
 		return soldeCompte;
 	}
 
-	
-	
+	/**
+	 * @param soldeCompte : le solde du compte
+	 */
+	public void setSoldeCompte(double soldeCompte) {
+		this.soldeCompte = soldeCompte;
+	}
+
 	
 
 }
