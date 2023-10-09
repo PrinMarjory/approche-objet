@@ -1,7 +1,7 @@
 package fr.diginamic.banque.entites;
 
 /**
- * Représente un compte bancaire
+ * Représente un compte de dépot bancaire courant
  * @author Marjory PRIN
  */
 public class Compte {
@@ -24,14 +24,14 @@ public class Compte {
 	}
 
 	/**
-	 * @return the numeroCompte
+	 * @return le numéro de compte
 	 */
 	public String getNumeroCompte() {
 		return numeroCompte;
 	}
 
 	/**
-	 * @return the soldeCompte
+	 * @return le solde du compte
 	 */
 	public double getSoldeCompte() {
 		return soldeCompte;
