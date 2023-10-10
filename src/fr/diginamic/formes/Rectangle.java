@@ -13,12 +13,6 @@ public class Rectangle extends Forme {
 	private double longueur;
 	
 	/**
-	 * Constructeur sans paramètre
-	 */
-	public Rectangle() {	
-	}
-	
-	/**
 	 * Constructeur qui prends en paramètre la largeur et la longueur
 	 * @param largeur : largeur du rectangle (en mm)
 	 * @param longueur : longueur du rectangle (en mm)
