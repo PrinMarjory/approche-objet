@@ -5,16 +5,21 @@ package fr.diginamic.operations;
  * @author Marjory PRIN
  */
 public class CalculMoyenne {
-	/**
-	 * Tableau contenant les valeurs 
-	 */
+	
+	/** Tableau contenant les valeurs */
 	private static double[] valeurs;
 	
-	
+	/**
+	 * Remets le tableau de valeur à zéro
+	 */
 	public static void clear() {
 		valeurs = new double[0];
 	}
 	
+	/**
+	 * Ajoute une valeur au tableau
+	 * @param a : valeur à ajouter
+	 */
 	public static void ajout(double a) {
 		double[] temp = new double [valeurs.length + 1];
 		for (int i = 0; i < valeurs.length; i++) {
@@ -24,6 +29,10 @@ public class CalculMoyenne {
 		valeurs = temp;
 	}
 	
+	/**
+	 * Calcul la moyenne du tableau de valeur
+	 * @return la moyenne
+	 */
 	public static double calcul() {
 		double moyenne = valeurs[0];
 		

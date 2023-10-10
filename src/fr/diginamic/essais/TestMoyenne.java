@@ -1,6 +1,10 @@
 package fr.diginamic.essais;
 import fr.diginamic.operations.CalculMoyenne;
 
+/**
+ * Tests de la classe CalculMoyenne
+ * @author Marjory PRIN
+ */
 public class TestMoyenne {
 	
 	public static void main(String[] args) {
@@ -12,7 +16,7 @@ public class TestMoyenne {
 		CalculMoyenne.ajout(15.0);
 		CalculMoyenne.ajout(2.0);	
 		result = CalculMoyenne.calcul();
-		System.out.println(result);
+		System.out.println("1er test : " + result);
 		
 		// Test 2
 		CalculMoyenne.clear();
@@ -20,6 +24,6 @@ public class TestMoyenne {
 		CalculMoyenne.ajout(10.0);	
 		CalculMoyenne.ajout(0.0);
 		result = CalculMoyenne.calcul();
-		System.out.println(result);
+		System.out.println("2ème test : " + result);
 		}
 }
