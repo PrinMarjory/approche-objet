@@ -1,5 +1,7 @@
 package fr.diginamic.listes;
 
+import java.util.Comparator;
+
 public class Ville {
 	
 	private String nom;
@@ -31,8 +33,6 @@ public class Ville {
 	public void setNbHabitants(int nbHabitants) {
 		this.nbHabitants = nbHabitants;
 	}
-	
-	
-	
+
 	
 }

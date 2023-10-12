@@ -1,7 +1,6 @@
-package maps;
+package fr.diginamic.maps;
 import java.util.HashMap;
 import java.util.Iterator;
-
 import fr.diginamic.listes.Ville;
 
 

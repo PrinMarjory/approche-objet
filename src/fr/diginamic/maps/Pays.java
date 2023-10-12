@@ -1,4 +1,4 @@
-package maps;
+package fr.diginamic.maps;
 
 /**
  * Représente un pays avec son nom, son nombre d'habitant et sont continent
