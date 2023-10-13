@@ -19,6 +19,19 @@ public class Departement {
 		this.listVilles = listVilles;
 		this.codeDepartement = codeDepartement;
 	}
+	
+	/**
+	 * Affichage de la liste de ville
+	 * @return la liste des villes
+	 */
+	@Override
+	public String toString() {
+		String toString = "";
+		for (Ville v : listVilles) {
+			toString += v.toString() + "\n";
+		}
+		return toString;
+	}
 
 	/**
 	 * Getter pour la liste des villes du département

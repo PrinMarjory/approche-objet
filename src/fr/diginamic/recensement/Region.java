@@ -24,6 +24,19 @@ public class Region {
 		this.nomRegion = nomRegion;
 		this.codeRegion = codeRegion;
 	}
+	
+	/**
+	 * Affichage de la liste de ville
+	 * @return la liste des villes
+	 */
+	@Override
+	public String toString() {
+		String toString = "";
+		for (Ville v : listVilles) {
+			toString += v.toString() + "\n";
+		}
+		return toString;
+	}
 
 	/**
 	 * Getter pour la liste des villes de la région

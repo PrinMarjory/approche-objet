@@ -13,7 +13,7 @@ public class Ville {
 	private String nomRegion;
 	
 	/** le code du département où se trouve la ville **/
-	private int codeDepartement;
+	private String codeDepartement;
 	
 	/** le code de la commune où se trouve la ville **/
 	private int codeCommune;
@@ -29,12 +29,11 @@ public class Ville {
 	 * @param codeRegion : code de la région
 	 * @param nomRegion : nom de la région
 	 * @param codeDepartement : code du département
-	 * @param nomDepartement : nom du département
 	 * @param codeCommune : code de la commune
 	 * @param nomCommune : nom de la ville/commune
 	 * @param population : population totale de la ville
 	 */
-	public Ville(int codeRegion, String nomRegion, int codeDepartement,
+	public Ville(int codeRegion, String nomRegion, String codeDepartement,
 			int codeCommune, String nomCommune, int population) {
 		super();
 		this.codeRegion = codeRegion;
@@ -51,7 +50,7 @@ public class Ville {
 	 */
 	@Override
 	public String toString() {
-		return nomCommune.toUpperCase() + " (" + codeDepartement + ") " + nomRegion + " : " + population + " hab.";
+		return nomCommune + " (" + codeDepartement + ") " + nomRegion.toUpperCase() + " : " + population + " hab.";
 	}
 
 	/**
@@ -74,7 +73,7 @@ public class Ville {
 	 * Getter pour le code du département
 	 * @return le nom du département
 	 */
-	public int getCodeDepartement() {
+	public String getCodeDepartement() {
 		return codeDepartement;
 	}
 
