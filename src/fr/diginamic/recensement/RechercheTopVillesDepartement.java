@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-import fr.diginamic.utils.Format;
 
 /**
  * Représente la recherche des 10 villes les plus peuplées d'un département demandé par l'utilisateur
@@ -41,7 +40,7 @@ public class RechercheTopVillesDepartement extends MenuService {
 			}
 			
 		} else {
-			System.out.println("\nLe département demandé n'existe pas !\n");
+			System.out.println("\nLe département demandé n'existe pas !");
 		}
 
 		

@@ -35,7 +35,7 @@ public class RecherchePopulationDepartement extends MenuService {
 			}
 			System.out.println("\nPopulation totale du département " + depRecherche + " : " + Format.bigInt(populationTotale) + " hab.");
 		} else {
-			System.out.println("\nLe département demandé n'existe pas !\n");
+			System.out.println("\nLe département demandé n'existe pas !");
 		}
 
 		

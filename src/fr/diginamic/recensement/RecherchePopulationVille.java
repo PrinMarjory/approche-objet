@@ -25,7 +25,7 @@ public class RecherchePopulationVille extends MenuService {
 			} 
 		}
 		if (isVilleTrouvee == false) {
-			System.out.println("\nLa ville demandée n'existe pas !\n");
+			System.out.println("\nLa ville demandée n'existe pas !");
 		}
 	}
 

@@ -41,7 +41,7 @@ public class RechercheTopVillesRegion extends MenuService {
 			}
 			
 		} else {
-			System.out.println("\nLa région demandée n'existe pas !\n");
+			System.out.println("\nLa région demandée n'existe pas !");
 		}
 
 		
