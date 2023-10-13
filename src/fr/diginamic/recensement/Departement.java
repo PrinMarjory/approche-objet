@@ -1,52 +1,52 @@
 package fr.diginamic.recensement;
-import java.util.ArrayList;
 
+/**
+ * Représente un département avec son code et son nombre d'habitants total
+ * 
+ * @author Marjory PRIN
+ */
 public class Departement {
 	
-	/** la liste de toutes le villes du département **/
-	private ArrayList<Ville> listVilles;
+	/** Le code du département **/
+	private String codeDep;
 	
-	/** le code du département **/
-	private int codeDepartement;
+	/** La population totale du département **/
+	private int population;
 
 	/**
-	 * Constructeur de Departement
-	 * @param listVilles : liste des villes du département
-	 * @param codeDepartement : code du département
+	 * Constructeur pour le département
+	 * @param codeDep : code du département
+	 * @param population : nombre d'habitant total
 	 */
-	public Departement(ArrayList<Ville> listVilles, int codeDepartement) {
+	public Departement(String codeDep, int population) {
 		super();
-		this.listVilles = listVilles;
-		this.codeDepartement = codeDepartement;
+		this.codeDep = codeDep;
+		this.population = population;
 	}
 	
 	/**
-	 * Affichage de la liste de ville
-	 * @return la liste des villes
+	 * Affichage du département
+	 * @return une chaine de caractère avec le code du département et sa population totale
 	 */
 	@Override
 	public String toString() {
-		String toString = "";
-		for (Ville v : listVilles) {
-			toString += v.toString() + "\n";
-		}
-		return toString;
-	}
-
-	/**
-	 * Getter pour la liste des villes du département
-	 * @return la liste des villes
-	 */
-	public ArrayList<Ville> getListVilles() {
-		return listVilles;
+		return codeDep + " (" + population + " hab.)";
 	}
 
 	/**
 	 * Getter pour le code du département
 	 * @return le code du département
 	 */
-	public int getCodeDepartement() {
-		return codeDepartement;
+	public String getCodeDep() {
+		return codeDep;
+	}
+
+	/**
+	 * Getter pour le nombre d'habitants total du département
+	 * @return le nombre d'habitant
+	 */
+	public int getPopulation() {
+		return population;
 	}
 	
 }

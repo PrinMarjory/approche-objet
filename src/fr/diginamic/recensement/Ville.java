@@ -1,5 +1,7 @@
 package fr.diginamic.recensement;
 
+import fr.diginamic.utils.Format;
+
 /**
  * Représente une ville 
  * @author Marjory PRIN
@@ -50,7 +52,7 @@ public class Ville {
 	 */
 	@Override
 	public String toString() {
-		return nomCommune + " (" + codeDepartement + ") " + nomRegion.toUpperCase() + " : " + population + " hab.";
+		return nomCommune + " (" + codeDepartement + ") " + nomRegion.toUpperCase() + " : " + Format.bigInt(population) + " hab.";
 	}
 
 	/**

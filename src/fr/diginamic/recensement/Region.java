@@ -1,51 +1,38 @@
 package fr.diginamic.recensement;
-import java.util.ArrayList;
 
+/**
+ * Représente une région avec son nom et son nombre d'habitants total
+ * 
+ * @author Marjory PRIN
+ */
 public class Region {
 	
-	/** la liste de toutes le villes de la région **/
-	private ArrayList<Ville> listVilles;
-	
-	/** le nom de la région **/
+	/** Le nom de la région **/
 	private String nomRegion;
 	
-	/** le code de la région **/
-	private int codeRegion;
+	/** La population totale de la région **/
+	private int population;
 
 	/**
-	 * Constructeur de Region
-	 * @param listVilles : liste des villes de la région
+	 * Constructeur pour la région
 	 * @param nomRegion : nom de la région
-	 * @param codeRegion : code de la région
+	 * @param population : nombre d'habitant total
 	 */
-	public Region(ArrayList<Ville> listVilles, String nomRegion, int codeRegion) {
+	public Region(String nomRegion, int population) {
 		super();
-		this.listVilles = listVilles;
 		this.nomRegion = nomRegion;
-		this.codeRegion = codeRegion;
+		this.population = population;
 	}
 	
 	/**
-	 * Affichage de la liste de ville
-	 * @return la liste des villes
+	 * Affichage de la région
+	 * @return une chaine de caractère avec le nom de la région et sa population totale
 	 */
 	@Override
 	public String toString() {
-		String toString = "";
-		for (Ville v : listVilles) {
-			toString += v.toString() + "\n";
-		}
-		return toString;
+		return nomRegion + " (" + population + " hab.)";
 	}
 
-	/**
-	 * Getter pour la liste des villes de la région
-	 * @return la liste des villes
-	 */
-	public ArrayList<Ville> getListVilles() {
-		return listVilles;
-	}
-	
 	/**
 	 * Getter pour le nom de la région
 	 * @return le nom de la région
@@ -55,11 +42,11 @@ public class Region {
 	}
 
 	/**
-	 * Getter pour le code de la région
-	 * @return le code de la region
+	 * Getter pour le nombre d'habitants total de la région
+	 * @return le nombre d'habitant
 	 */
-	public int getCodeRegion() {
-		return codeRegion;
+	public int getPopulation() {
+		return population;
 	}
 	
 }
