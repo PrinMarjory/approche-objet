@@ -13,7 +13,6 @@ public class JeuDeRole {
 		
 		// Boucle de retour au menu
 		while (option != 4) {
-			
 			// Affichage du menu
 			System.out.println("\n|||||||||||||||||||||||||||||||||||||||||\n\n"
 					+ "                   MENU\n"

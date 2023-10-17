@@ -73,7 +73,7 @@ public class Combat {
 		// Boucle de combat tant que'aucun des deux combattant n'est mort
 		while (vieGuerrier > 0 && vieCreature > 0) {
 			
-			// Afichage du tour
+			// Affichage du tour
 			nbTour++;
 			System.out.println("\n===================================\n"
 							 + "\n               TOUR " + nbTour
